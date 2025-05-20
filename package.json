@@ -1,8 +1,8 @@
 {
   "name": "haron-med-react-site",
-  "homepage": "https://Patrickkinyua.github.io/haron-med-aura",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://Patrickkinyua.github.io/haron-med-aura",
   "dependencies": {
     "emailjs-com": "^3.2.0",
     "framer-motion": "^10.12.16",
@@ -16,7 +16,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
   },
   "browserslist": {
     "production": [
